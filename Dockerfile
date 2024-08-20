@@ -8,4 +8,4 @@ COPY aicode.py aicode.py
 EXPOSE 8080
 
 # Streamlit 실행
-ENTRYPOINT ["streamlit", "run", "aicode.py", "--server.port=8080"]
+ENTRYPOINT ["/bin/bash", "-c", "streamlit run aicode.py --server.port=8080"]
